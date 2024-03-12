@@ -13,6 +13,7 @@ public class Table
     public var countTime:Float
     public var isReserve:Bool
     private var timer: Timer?
+    //array example --> var num : [int] = [initialize data or null]
     
     init() 
     {
@@ -21,18 +22,20 @@ public class Table
         reserveTime = 10
         
         print("Created Table")
-        //array example --> var num : [int] = [initialize data or null]
         StartTimer()
     }
     
-    public func Reserve()
+    public func Reserve(time:Float)
     {
+        self.reserveTime = time
+        self.isReserve = true
         StartTimer()
     }
     
     public func UnReserve()
     {
-        
+        self.countTime = 0
+        self.isReserve = false
     }
     
     public func StartTimer()
