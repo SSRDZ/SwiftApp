@@ -9,7 +9,7 @@ public class Table
     
     init() 
     {
-        isReserve = false
+        isReserve = true
         countTime = 0
         reserveTime = 10
         
@@ -33,7 +33,7 @@ public class Table
     
     public func StartTimer()
     {
-        Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true)
+        timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true)
         {
             timer in
             if self.countTime < self.reserveTime && self.isReserve == true
@@ -43,14 +43,14 @@ public class Table
             }
             else
             {
-                self.StopTimer()
-                self.countTime = 0
+                self.UnReserve()
             }
         }
     }
     
     private func StopTimer()
     {
+        timer?.invalidate()
         timer = nil
         print("StopedTimer")
     }

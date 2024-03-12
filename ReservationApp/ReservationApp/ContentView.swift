@@ -11,7 +11,7 @@ import CoreData
 struct ContentView: View {
     @State var helloName: String = "HAHAHA"
     @State var isShowSheet:Bool = false
-    var manager = TableManager()
+    var manager = TableManager(max:10)
     
     var body: some View //main program
     {
