@@ -6,7 +6,7 @@ public class Table
     public var countTime:Float
     public var isReserve:Bool
     private var timer: Timer?
-    
+    //o
     init() 
     {
         isReserve = true
