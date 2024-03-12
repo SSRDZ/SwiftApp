@@ -5,16 +5,17 @@ public class Table
     public var reserveTime:Float
     public var countTime:Float
     public var isReserve:Bool
+    public var counter:Int
     private var timer: Timer?
-    //o
-    init() 
+    
+    init(num:Int)
     {
-        isReserve = true
+        isReserve = false
         countTime = 0
         reserveTime = 10
+        counter = num
         
-        print("Created Table")
-        StartTimer()
+        print("Created Table : ", num)
     }
     
     public func Reserve(time:Float)

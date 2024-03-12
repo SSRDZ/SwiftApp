@@ -1,83 +1,78 @@
 
-//
-//  4.swift
-//  ReservationApp
-//
-//  Created by admin on 3/11/24.
-//
-
 import SwiftUI
 
-struct ReserveScreen: View {
-    var body: some View {
-        VStack{
-            HStack{
-                Button {
-                action: do {Complete()}
-                } label: {
+struct ReserveScreen: View 
+{
+    var manager = TableManager(max:8)
+    
+    var body: some View
+    {
+        VStack
+        {
+            HStack
+            {
+                Button(action: {TryReserve(index:0)})
+                {
                     Image("to")
                 }
-                Button {
-                action: do {Complete()}
-                } label: {
+                Spacer()
+                Button(action: {TryReserve(index:1)})
+                {
                     Image("to2")
                 }
-                
             }
-            HStack{
-                Button {
-                action: do {Complete()}
-                } label: {
+            HStack
+            {
+                Button(action: {TryReserve(index:2)})
+                {
                     Image("to")
                 }
-                Button {
-                action: do {Complete()}
-                } label: {
+                Spacer()
+                Button(action: {TryReserve(index:3)})
+                {
                     Image("to2")
                 }
-                
             }
-            HStack{
-                Button {
-                action: do {Complete()}
-                } label: {
+            HStack
+            {
+                Button(action: {TryReserve(index:4)})
+                {
                     Image("to")
                 }
-                Button {
-                action: do {Complete()}
-                } label: {
+                Spacer()
+                Button(action: {TryReserve(index:5)})
+                {
                     Image("to2")
                 }
-                
             }
-            HStack{
-                Button {
-                action: do {Complete()}
-                } label: {
+            HStack
+            {
+                Button(action: {TryReserve(index:6)})
+                {
                     Image("to")
                 }
-                Button {
-                action: do {Complete()}
-                } label: {
+                Spacer()
+                Button(action: {TryReserve(index:7)})
+                {
                     Image("to2")
                 }
-                
             }
-            
         }
         .padding(380)
         .background(Color("skin"))
-        
-        
     }
-    func Complete()
+    
+    func TryReserve(index:Int)
     {
-        
+        if manager.GetTableStatus(index: index) == false
+        {
+            manager.tables[index].Reserve(time: 30)
+        }
     }
 }
-    
+
 #Preview
-    {
+{
     ReserveScreen()
-    }
+}
 

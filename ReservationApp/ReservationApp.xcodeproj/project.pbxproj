@@ -114,14 +114,14 @@
 				84FFA7782B9FF52600220275 /* ContentView.swift */,
 				844901262B9FFA1C00A325D6 /* SwiftUIView.swift */,
 				8449012A2BA0073600A325D6 /* TableManager.swift */,
+				848845772BA03D4C0093E1FA /* ReserveScreen.swift */,
 				844901282B9FFADE00A325D6 /* Table.swift */,
 				8449012C2BA01AF500A325D6 /* Profile.swift */,
+				848845752BA03B000093E1FA /* log in.swift */,
 				84FFA77A2B9FF52700220275 /* Assets.xcassets */,
 				84FFA77F2B9FF52700220275 /* Persistence.swift */,
 				84FFA7812B9FF52700220275 /* ReservationApp.xcdatamodeld */,
 				84FFA77C2B9FF52700220275 /* Preview Content */,
-				848845752BA03B000093E1FA /* log in.swift */,
-				848845772BA03D4C0093E1FA /* ReserveScreen.swift */,
 			);
 			path = ReservationApp;
 			sourceTree = "<group>";
