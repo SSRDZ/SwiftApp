@@ -11,6 +11,7 @@ import CoreData
 struct ContentView: View {
     @State var helloName: String = "HAHAHA"
     @State var isShowSheet:Bool = false
+    var table = Table()
     
     var body: some View //main program
     {
