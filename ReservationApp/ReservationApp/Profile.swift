@@ -16,7 +16,7 @@ public class Profile
     init()
     {
         email = ""
-        name = ""
+        name = "kp"
         password = ""
     }
     
