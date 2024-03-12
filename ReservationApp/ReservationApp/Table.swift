@@ -1,10 +1,3 @@
-//
-//  Table.swift
-//  ReservationApp
-//
-//  Created by admin on 3/11/24.
-//
-
 import Foundation
 
 public class Table
@@ -13,7 +6,6 @@ public class Table
     public var countTime:Float
     public var isReserve:Bool
     private var timer: Timer?
-    //array example --> var num : [int] = [initialize data or null]
     
     init() 
     {
@@ -36,14 +28,15 @@ public class Table
     {
         self.countTime = 0
         self.isReserve = false
+        self.StopTimer()
     }
     
     public func StartTimer()
     {
-        Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) 
+        Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true)
         {
             timer in
-            if self.countTime < self.reserveTime
+            if self.countTime < self.reserveTime && self.isReserve == true
             {
                 self.countTime += 1
                 print(self.countTime)
