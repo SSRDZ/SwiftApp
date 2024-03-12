@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		844901272B9FFA1C00A325D6 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844901262B9FFA1C00A325D6 /* SwiftUIView.swift */; };
 		84FFA7772B9FF52600220275 /* ReservationAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FFA7762B9FF52600220275 /* ReservationAppApp.swift */; };
 		84FFA7792B9FF52600220275 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FFA7782B9FF52600220275 /* ContentView.swift */; };
 		84FFA77B2B9FF52700220275 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84FFA77A2B9FF52700220275 /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		844901262B9FFA1C00A325D6 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		84FFA7732B9FF52600220275 /* ReservationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReservationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84FFA7762B9FF52600220275 /* ReservationAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationAppApp.swift; sourceTree = "<group>"; };
 		84FFA7782B9FF52600220275 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 			children = (
 				84FFA7762B9FF52600220275 /* ReservationAppApp.swift */,
 				84FFA7782B9FF52600220275 /* ContentView.swift */,
+				844901262B9FFA1C00A325D6 /* SwiftUIView.swift */,
 				84FFA77A2B9FF52700220275 /* Assets.xcassets */,
 				84FFA77F2B9FF52700220275 /* Persistence.swift */,
 				84FFA7812B9FF52700220275 /* ReservationApp.xcdatamodeld */,
@@ -267,6 +270,7 @@
 				84FFA7792B9FF52600220275 /* ContentView.swift in Sources */,
 				84FFA7832B9FF52700220275 /* ReservationApp.xcdatamodeld in Sources */,
 				84FFA7772B9FF52600220275 /* ReservationAppApp.swift in Sources */,
+				844901272B9FFA1C00A325D6 /* SwiftUIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
