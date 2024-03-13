@@ -3,7 +3,8 @@ import SwiftUI
 
 struct ReserveScreen: View 
 {
-    var manager = TableManager.tableInstance
+    @State var manager = TableManager.tableInstance
+    @State var didTap: Bool = true
     
     var body: some View
     {
@@ -55,21 +56,23 @@ struct ReserveScreen: View
                     Image("to6")
                 }
                 Spacer()
-                Button(action: {TryReserve(index:7)})
+                Button(action: {self.didTap.toggle()})
                 {
                     Image("to6")
+                    .background( didTap ? Color("skin") : Color(.red))
                 }
             }
         }
         .padding(380)
-        .background(Color("skin"))
+        .background(Color("skin") )
     }
     
     func TryReserve(index:Int)
     {
         if manager.GetTableStatus(index: index) == false
         {
-            manager.tables[index].Reserve(time: 30)
+            manager.tables[index].Reserve(time: 5)
+            print(manager.tables[7].isReserve)
         }
     }
 }

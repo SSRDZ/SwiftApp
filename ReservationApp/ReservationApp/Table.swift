@@ -33,6 +33,7 @@ public class Table
         self.countTime = 0
         self.isReserve = false
         self.StopTimer()
+        print(self.isReserve)
     }
     
     public func StartTimer()
@@ -43,7 +44,7 @@ public class Table
             if self.countTime < self.reserveTime && self.isReserve == true
             {
                 self.countTime += 1
-                print(self.countTime)
+                print(self.countTime,self.isReserve)
             }
             else
             {
