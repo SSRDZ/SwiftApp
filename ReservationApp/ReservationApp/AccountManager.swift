@@ -3,6 +3,7 @@ import Foundation
 class AccountManager
 {
     public var account: [Profile] = []
+    public var selectedName:String
     
     static var accountInstance = AccountManager()
     
@@ -11,6 +12,7 @@ class AccountManager
         print("StartAccountManager")
         isNew = false
         correct = false
+        selectedName = ""
         CreateNewAccount(name: "Sard", email: "sard", password: "1234")
     }
     

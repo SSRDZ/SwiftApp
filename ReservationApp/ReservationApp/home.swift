@@ -10,6 +10,7 @@ import SwiftUI
 struct home: View {
     //var profile = Profile()
     @State var inReserve = false
+    var accountManager = AccountManager.accountInstance
     
     var body: some View {
         NavigationView{
