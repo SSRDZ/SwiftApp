@@ -16,6 +16,7 @@
 		848845782BA03D4C0093E1FA /* ReserveScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848845772BA03D4C0093E1FA /* ReserveScreen.swift */; };
 		8488457A2BA044660093E1FA /* home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848845792BA044660093E1FA /* home.swift */; };
 		8497A4512BA12F9400624CEB /* sign up.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8497A4502BA12F9400624CEB /* sign up.swift */; };
+		8497A4592BA1533400624CEB /* X2Download.app - Alastor as a Ringtone (256 kbps).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8497A4582BA1533400624CEB /* X2Download.app - Alastor as a Ringtone (256 kbps).mp3 */; };
 		84FFA7772B9FF52600220275 /* ReservationAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FFA7762B9FF52600220275 /* ReservationAppApp.swift */; };
 		84FFA77B2B9FF52700220275 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84FFA77A2B9FF52700220275 /* Assets.xcassets */; };
 		84FFA77E2B9FF52700220275 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84FFA77D2B9FF52700220275 /* Preview Assets.xcassets */; };
@@ -53,6 +54,7 @@
 		848845772BA03D4C0093E1FA /* ReserveScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserveScreen.swift; sourceTree = "<group>"; };
 		848845792BA044660093E1FA /* home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = home.swift; sourceTree = "<group>"; };
 		8497A4502BA12F9400624CEB /* sign up.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "sign up.swift"; sourceTree = "<group>"; };
+		8497A4582BA1533400624CEB /* X2Download.app - Alastor as a Ringtone (256 kbps).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "X2Download.app - Alastor as a Ringtone (256 kbps).mp3"; path = "../../../../../Downloads/X2Download.app - Alastor as a Ringtone (256 kbps).mp3"; sourceTree = "<group>"; };
 		84FFA7732B9FF52600220275 /* ReservationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReservationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84FFA7762B9FF52600220275 /* ReservationAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationAppApp.swift; sourceTree = "<group>"; };
 		84FFA77A2B9FF52700220275 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 		84FFA7952B9FF52700220275 /* ReservationAppUITests */ = {
 			isa = PBXGroup;
 			children = (
+				8497A4582BA1533400624CEB /* X2Download.app - Alastor as a Ringtone (256 kbps).mp3 */,
 				84FFA7962B9FF52700220275 /* ReservationAppUITests.swift */,
 				84FFA7982B9FF52700220275 /* ReservationAppUITestsLaunchTests.swift */,
 			);
@@ -277,6 +280,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8497A4592BA1533400624CEB /* X2Download.app - Alastor as a Ringtone (256 kbps).mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
