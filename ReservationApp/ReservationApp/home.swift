@@ -9,6 +9,7 @@ import SwiftUI
 
 struct home: View {
     //var profile = Profile()
+    @Environment(\.dismiss) var dismiss
     @State var inReserve = false
     var accountManager = AccountManager.accountInstance
     
@@ -39,7 +40,13 @@ struct home: View {
                     .foregroundColor(.white)
                     .background(.brown)
                     .cornerRadius(10)
-                    .padding(.bottom, 100)
+                    .padding(.bottom, 5)
+                Button("Log out      ",action: {GoBack()})
+                    .buttonStyle(.bordered)
+                    .foregroundColor(.white)
+//                    .background(.brown)
+                    .cornerRadius(10)
+
                 
             }
             .padding(45)
@@ -50,6 +57,11 @@ struct home: View {
     func Complete()
     {
         inReserve = true
+    }
+    
+    func GoBack()
+    {
+        dismiss()
     }
 
 }

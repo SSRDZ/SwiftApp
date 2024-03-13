@@ -45,6 +45,7 @@ struct SignUp: View {
                         .foregroundColor(.white)
                         .background(.brown)
                         .cornerRadius(10)
+                        .padding(.top)
                 
                     Text("or sign up with....")
                         .padding(.top, 60)
