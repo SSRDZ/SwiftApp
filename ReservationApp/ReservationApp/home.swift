@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct home: View {
-    //var profile = Profile()
+//    var profile = Profile()
     var body: some View {
         
         VStack{
