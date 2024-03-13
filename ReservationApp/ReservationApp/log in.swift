@@ -8,7 +8,7 @@ struct Login: View {
     @State var showHome = false
     @State var isPresenting = false
     
-    var profile = Profile()
+    @State var accountManager = AccountManager()
     
     var body: some View
     {
@@ -33,7 +33,7 @@ struct Login: View {
                     .font(Font.system(size: 12, design: .default))
                 HStack{
                     Spacer()
-                    Button("forgot password?",action: {Complete()})//อย่าลืมเปลี่ยนเป็นฟังชั่นลืมรหัส
+                    Button("forgot password?",action: {SignIn()})//อย่าลืมเปลี่ยนเป็นฟังชั่นลืมรหัส
                         .font(Font.system(size: 16, design: .default))
                 }
                 
@@ -52,19 +52,19 @@ struct Login: View {
                 //            Button("facebook              ",action: {Complete()})
                 
                 Button {
-                action: do {Complete()}
+                action: do {SignIn()}
                 } label: {
                     Image("f")
                     
                 }
                 Button {
-                action: do {Complete()}
+                action: do {SignIn()}
                 } label: {
                     Image("l")
                     
                 }
                 Button {
-                action: do {Complete()}
+                action: do {SignIn()}
                 } label: {
                     Image("g")
                     
@@ -73,7 +73,7 @@ struct Login: View {
                 Spacer()
                 
                 Text("Don’t have an account yet?")
-                Button("sign up",action: {Complete()})
+                Button("sign up",action: {SignIn()})
             }
             
             .padding(47.62)
@@ -85,16 +85,11 @@ struct Login: View {
     
     @State private var isActive = false
     
-    func Complete()
-    {
-        isPresenting = true;
-    }
-    
     func SignIn()
     {
-        if username != "" && password != ""
+        if(accountManager.TryLogin(name: username, email: username, password: password) == true)
         {
-            profile.SignUp(mail: "m", newName: username ,pass: password)
+            isPresenting = true;
         }
     }
     

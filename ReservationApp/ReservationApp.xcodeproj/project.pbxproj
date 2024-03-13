@@ -11,6 +11,7 @@
 		844901292B9FFADE00A325D6 /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844901282B9FFADE00A325D6 /* Table.swift */; };
 		8449012B2BA0073600A325D6 /* TableManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8449012A2BA0073600A325D6 /* TableManager.swift */; };
 		8449012D2BA01AF500A325D6 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8449012C2BA01AF500A325D6 /* Profile.swift */; };
+		8449012F2BA130A300A325D6 /* AccountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8449012E2BA130A300A325D6 /* AccountManager.swift */; };
 		848845762BA03B000093E1FA /* log in.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848845752BA03B000093E1FA /* log in.swift */; };
 		848845782BA03D4C0093E1FA /* ReserveScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848845772BA03D4C0093E1FA /* ReserveScreen.swift */; };
 		8488457A2BA044660093E1FA /* home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848845792BA044660093E1FA /* home.swift */; };
@@ -47,6 +48,7 @@
 		844901282B9FFADE00A325D6 /* Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
 		8449012A2BA0073600A325D6 /* TableManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableManager.swift; sourceTree = "<group>"; };
 		8449012C2BA01AF500A325D6 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		8449012E2BA130A300A325D6 /* AccountManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountManager.swift; sourceTree = "<group>"; };
 		848845752BA03B000093E1FA /* log in.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "log in.swift"; sourceTree = "<group>"; };
 		848845772BA03D4C0093E1FA /* ReserveScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserveScreen.swift; sourceTree = "<group>"; };
 		848845792BA044660093E1FA /* home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = home.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				84FFA7782B9FF52600220275 /* ContentView.swift */,
 				844901262B9FFA1C00A325D6 /* SwiftUIView.swift */,
 				8449012A2BA0073600A325D6 /* TableManager.swift */,
+				8449012E2BA130A300A325D6 /* AccountManager.swift */,
 				844901282B9FFADE00A325D6 /* Table.swift */,
 				8449012C2BA01AF500A325D6 /* Profile.swift */,
 				84FFA77A2B9FF52700220275 /* Assets.xcassets */,
@@ -291,6 +294,7 @@
 				84FFA7792B9FF52600220275 /* ContentView.swift in Sources */,
 				84FFA7832B9FF52700220275 /* ReservationApp.xcdatamodeld in Sources */,
 				848845782BA03D4C0093E1FA /* ReserveScreen.swift in Sources */,
+				8449012F2BA130A300A325D6 /* AccountManager.swift in Sources */,
 				84FFA7772B9FF52600220275 /* ReservationAppApp.swift in Sources */,
 				8488457A2BA044660093E1FA /* home.swift in Sources */,
 				8449012B2BA0073600A325D6 /* TableManager.swift in Sources */,
