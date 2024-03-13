@@ -9,6 +9,7 @@ struct Login: View {
     @State var inSignUp = false
     
     var accountManager = AccountManager.accountInstance
+    var manager = TableManager.tableInstance
     
     var body: some View
     {
@@ -38,7 +39,7 @@ struct Login: View {
                         .font(Font.system(size: 13, design: .default))
                 }
                 
-                NavigationLink(destination: ReserveScreen(), isActive: $isPresenting){}
+                NavigationLink(destination: home(), isActive: $isPresenting){}
                     Button("sign in             ",action: {SignIn()}) //อย่าลืมเปลี่ยนเป็นฟังชันไซน์อิน
                         .buttonStyle(.bordered)
                         .foregroundColor(.white)
