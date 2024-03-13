@@ -13,22 +13,21 @@ struct home: View {
         
         VStack{
             
+            
+                
+            
+            Text(profile.name)
+                .font(Font.system(size: 40, design: .default))
+                .padding(.bottom,1 )
+                
+                Spacer()
+            
             Image("brs")
                 .resizable()
                 .frame(width: 300.0, height: 185.25)
                 .cornerRadius(30)
                 Spacer()
-                
-            
-            Text(profile.name)
-                .font(Font.system(size: 20, design: .default))
-                .padding(.bottom,1 )
-                Spacer()
-            
-            Image("logo2")
-                .resizable()
-                .frame(width: 300.0, height: 250)
-                .cornerRadius(30)
+
             
             Text("welcome to MUM")
                 .padding(.bottom, 100
