@@ -50,6 +50,7 @@ class AccountManager
         {
             if account[index].name == name && account[index].password == password || account[index].email == email && account[index].password == password
             {
+                selectedName = account[index].name
                 correct = true
                 break
             }

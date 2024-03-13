@@ -22,20 +22,23 @@ struct ReserveScreen: View
                 Button(action: {TryReserve(index:0)})
                 {
                     Image("to")
-                    .background( selected[0] ? Color(.red) : Color("skin"))
+                    .background( selected[0] ? Color(.brown) : Color("skin"))
+                    .cornerRadius(15)
                 }
                 Spacer()
                 Button(action: {TryReserve(index:1)})
                 {
                     Image("to2")
-                    .background( selected[1] ? Color(.red) : Color("skin"))
+                    .background( selected[1] ? Color(.brown) : Color("skin"))
+                    .cornerRadius(15)
                 }
             }
             
                 Button(action: {TryReserve(index:2)})
                 {
                     Image("to5")
-                    .background( selected[2] ? Color(.red) : Color("skin"))
+                    .background( selected[2] ? Color(.brown) : Color("skin"))
+                    .cornerRadius(10000)
                 }
                 Spacer()
                 
@@ -45,13 +48,15 @@ struct ReserveScreen: View
                 Button(action: {TryReserve(index:3)})
                 {
                     Image("to3")
-                    .background( selected[3] ? Color(.red) : Color("skin"))
+                    .background( selected[3] ? Color(.brown) : Color("skin"))
+                    .cornerRadius(15)
                 }
 
                 Button(action: {TryReserve(index:4)})
                 {
                     Image("to4")
-                    .background( selected[4] ? Color(.red) : Color("skin"))
+                    .background( selected[4] ? Color(.brown) : Color("skin"))
+                    .cornerRadius(15)
                 }
                 
             }
@@ -61,19 +66,23 @@ struct ReserveScreen: View
                 Button(action: {TryReserve(index:5)})
                 {
                     Image("to6")
-                    .background( selected[5] ? Color(.red) : Color("skin"))
+                    .background( selected[5] ? Color(.brown) : Color("skin"))
+                    .cornerRadius(15)
+                
                 }
                 Spacer()
                 Button(action: {TryReserve(index:6)})
                 {
                     Image("to6")
-                    .background( selected[6] ? Color(.red) : Color("skin"))
+                    .background( selected[6] ? Color(.brown) : Color("skin"))
+                    .cornerRadius(15)
                 }
                 Spacer()
                 Button(action: {TryReserve(index:7)})
                 {
                     Image("to6")
-                    .background( selected[7] ? Color(.red) : Color("skin"))
+                    .background( selected[7] ? Color(.brown) : Color("skin"))
+                    .cornerRadius(15)
                 }
             }
         }
