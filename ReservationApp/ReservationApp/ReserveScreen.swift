@@ -21,40 +21,43 @@ struct ReserveScreen: View
                     Image("to2")
                 }
             }
-            HStack
-            {
+            
                 Button(action: {TryReserve(index:2)})
                 {
-                    Image("to")
+                    Image("to5")
                 }
                 Spacer()
+                
+            
+            HStack
+            {
                 Button(action: {TryReserve(index:3)})
                 {
-                    Image("to2")
+                    Image("to3")
                 }
-            }
-            HStack
-            {
+
                 Button(action: {TryReserve(index:4)})
                 {
-                    Image("to")
+                    Image("to4")
                 }
-                Spacer()
-                Button(action: {TryReserve(index:5)})
-                {
-                    Image("to2")
-                }
+                
             }
+            
             HStack
             {
+                Button(action: {TryReserve(index:5)})
+                {
+                    Image("to6")
+                }
+                Spacer()
                 Button(action: {TryReserve(index:6)})
                 {
-                    Image("to")
+                    Image("to6")
                 }
                 Spacer()
                 Button(action: {TryReserve(index:7)})
                 {
-                    Image("to2")
+                    Image("to6")
                 }
             }
         }
