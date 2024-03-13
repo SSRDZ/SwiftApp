@@ -1,6 +1,6 @@
 import Foundation
 
-public class TableManager
+public class TableManager:ObservableObject
 {
     public var tables : [Table] = []
     public var tableCount:Int
@@ -12,8 +12,11 @@ public class TableManager
         tableCount = 0
         maxTable = max
         selectingTable = 0
-        let newTable = Table()
-        self.tables.append(newTable)
+        for number in stride(from: 0, to: max, by: 1) 
+        {
+            let newTable = Table(num:number)
+            tables.append(newTable)
+        }
         print("StartManager")
     }
     
