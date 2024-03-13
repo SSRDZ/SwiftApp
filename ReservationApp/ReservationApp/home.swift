@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct home: View {
-    var profile = Profile()
+//    var profile = Profile()
     var body: some View {
         
         VStack{
@@ -16,7 +16,7 @@ struct home: View {
             
                 
             
-            Text(profile.name)
+            Text("profile.name")
                 .font(Font.system(size: 40, design: .default))
                 .padding(.bottom,1 )
                 

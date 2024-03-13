@@ -1,15 +1,10 @@
-//
-//  ProfileManager.swift
-//  ReservationApp
-//
-//  Created by admin on 3/12/24.
-//
-
 import Foundation
 
-public class AccountManager
+class AccountManager
 {
     public var account: [Profile] = []
+    
+    static var accountInstance = AccountManager()
     
     init()
     {
@@ -41,6 +36,7 @@ public class AccountManager
     private var correct:Bool
     func CreateNewAccount(name:String,email:String,password:String)
     {
+        print("AccountCreated")
         let newAccount = Profile(newName:name,mail:email,pass:password)
         account.append(newAccount)
     }

@@ -1,13 +1,15 @@
 import Foundation
 
-public class TableManager:ObservableObject
+class TableManager
 {
     public var tables : [Table] = []
     public var tableCount:Int
     public var maxTable:Int
     public var selectingTable:Int
     
-    init(max:Int)
+    static let tableInstance = TableManager(max: 8)
+
+    private init(max:Int)
     {
         tableCount = 0
         maxTable = max

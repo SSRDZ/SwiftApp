@@ -2,17 +2,18 @@
 import SwiftUI
 
 struct Login: View {
-    @Environment(\.dismiss) var dismiss //this is sub view
     @State var username: String = ""
     @State var password: String = ""
     @State var showHome = false
     @State var isPresenting = false
+    @State var inSignUp = false
     
-    @State var accountManager = AccountManager()
+    var accountManager = AccountManager.accountInstance
     
     var body: some View
     {
-        NavigationView{
+        NavigationView
+        {
             VStack
             {
                 Image("logo")
@@ -34,7 +35,7 @@ struct Login: View {
                 HStack{
                     Spacer()
                     Button("forgot password?",action: {SignIn()})//อย่าลืมเปลี่ยนเป็นฟังชั่นลืมรหัส
-                        .font(Font.system(size: 16, design: .default))
+                        .font(Font.system(size: 13, design: .default))
                 }
                 
                 NavigationLink(destination: ReserveScreen(), isActive: $isPresenting){}
@@ -73,7 +74,8 @@ struct Login: View {
                 Spacer()
                 
                 Text("Don’t have an account yet?")
-                Button("sign up",action: {SignIn()})
+                NavigationLink(destination: SignUp(), isActive: $inSignUp){}
+                Button("sign up",action: {GoSignUp()})
             }
             
             .padding(47.62)
@@ -81,6 +83,7 @@ struct Login: View {
             .textFieldStyle(WhiteBorder())
             
         }
+        .navigationBarHidden(true)
     }
     
     @State private var isActive = false
@@ -91,6 +94,11 @@ struct Login: View {
         {
             isPresenting = true;
         }
+    }
+    
+    func GoSignUp()
+    {
+        inSignUp = true
     }
     
     struct WhiteBorder: TextFieldStyle {

@@ -3,7 +3,7 @@ import SwiftUI
 
 struct ReserveScreen: View 
 {
-    var manager = TableManager(max:8)
+    var manager = TableManager.tableInstance
     
     var body: some View
     {
