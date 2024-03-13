@@ -1,5 +1,7 @@
 import Foundation
 
+
+
 public class Table
 {
     public var reserveTime:Float
@@ -7,6 +9,7 @@ public class Table
     public var isReserve:Bool
     public var counter:Int
     private var timer: Timer?
+    
     
     init(num:Int)
     {
